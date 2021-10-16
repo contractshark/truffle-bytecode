@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const fs = require('fs')
 const util = require('util')
 
@@ -5,7 +6,8 @@ const lstat = util.promisify(fs.lstat)
 const readDir = util.promisify(fs.readdir)
 
 const Table = require('cli-table')
-const yargs = require('yargs')
+const yargs = require('yargs/yargs')
+
 
 // 1 KiB = 1.024 bytes
 const DEFAULT_MAX_CONTRACT_SIZE_IN_KIB = 24

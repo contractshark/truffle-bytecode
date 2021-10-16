@@ -1,15 +1,9 @@
 {
-  "name": "truffle-contract-size",
-  "version": "2.0.1",
+  "name": "@contractshark/truffle-bytecode",
+  "version": "3.0.0",
   "description": "Displays the size of a truffle contracts in kilobytes",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/IoBuilders/truffle-contract-size.git"
   },
   "keywords": [
     "solidity",
@@ -21,20 +15,14 @@
   ],
   "author": "tech@io.builders",
   "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/IoBuilders/truffle-contract-size/issues"
-  },
-  "homepage": "https://github.com/IoBuilders/truffle-contract-size#readme",
   "dependencies": {
-    "cli-table": "^0.3.1",
-    "yargs": "^15.3.1"
+    "cli-table": "^0.3.6",
+    "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "@types/node": "^14.17.27",
+    "debug": "^4.3.2",
+    "prettier": "^2.4.1",
+    "verror": "^1.10.0"
   }
 }
